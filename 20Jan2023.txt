@@ -1,0 +1,114 @@
+gurma@Gurman MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/gurma/.git/
+
+gurma@Gurman MINGW64 ~ (master)
+$ git init demo
+Reinitialized existing Git repository in C:/Users/gurma/demo/.git/
+
+gurma@Gurman MINGW64 ~ (master)
+$ cd D:\Source Code Management
+bash: cd: too many arguments
+
+gurma@Gurman MINGW64 ~ (master)
+$ cd "D:\Source Code Management"
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git init
+Reinitialized existing Git repository in D:/Source Code Management/.git/
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ touch abc.txt
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git add abc.txt
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abc.txt
+
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git commit "First Commit!"
+error: pathspec 'First Commit!' did not match any file(s) known to git
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git commit -m "First Commit!"
+[master 6c46d6c] First Commit!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc.txt
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch
+* master
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch -a
+* master
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git config --global user.name"Gurman"
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git config --global user.email"gurmanpreet341.be22@chitkara.edu.in"
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch hello_world
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch new_feature
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch -a
+  hello_world
+* master
+  new_feature
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch -d new_feature
+Deleted branch new_feature (was 6c46d6c).
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch -a
+  hello_world
+* master
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git branch btech_cse
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git checkout btech_cse
+Switched to branch 'btech_cse'
+
+gurma@Gurman MINGW64 /d/Source Code Management (btech_cse)
+$ git checkout hello_world
+Switched to branch 'hello_world'
+
+gurma@Gurman MINGW64 /d/Source Code Management (hello_world)
+$ git checkout -b 20_january
+Switched to a new branch '20_january'
+
+gurma@Gurman MINGW64 /d/Source Code Management (20_january)
+$ git checkout master
+Switched to branch 'master'
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git merge
+fatal: No remote for the current branch.
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ git merge hello_world
+Already up to date.
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ cd D:\Source Code Management
+bash: cd: too many arguments
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ cd "D:\Source Code Management"
+
+gurma@Gurman MINGW64 /d/Source Code Management (master)
+$ touch hello.txt
